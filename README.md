@@ -1,4 +1,3 @@
-
 # Projeto de Detecção de Anomalias com Acelerômetro (ESP32 + MPU6050)
 
 Este projeto demonstra uma simulação prática de detecção de anomalias em dados de aceleração coletados de um sensor MPU6050 conectado a um ESP32. O objetivo é identificar variações anômalas de movimento que possam representar eventos relevantes como tremores, quedas ou vibrações inesperadas.
@@ -54,3 +53,11 @@ Upload do código via Arduino IDE para o ESP32.
 ---
 
 📄 O relatório detalhado com imagens da simulação está disponível no arquivo PDF incluso.
+
+## Repositório
+
+Este projeto está hospedado publicamente no GitHub:
+
+🔗 [https://github.com/alansms/CP02_PHYSICAL_COMPUTING_ROBOTICS_COGNITIVE_IOT](https://github.com/alansms/CP02_PHYSICAL_COMPUTING_ROBOTICS_COGNITIVE_IOT)
+
+Inclui código-fonte completo, datasets utilizados, modelo treinado e o PDF do relatório de entrega.
