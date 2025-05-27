@@ -61,3 +61,13 @@ Este projeto está hospedado publicamente no GitHub:
 🔗 [https://github.com/alansms/CP02_PHYSICAL_COMPUTING_ROBOTICS_COGNITIVE_IOT](https://github.com/alansms/CP02_PHYSICAL_COMPUTING_ROBOTICS_COGNITIVE_IOT)
 
 Inclui código-fonte completo, datasets utilizados, modelo treinado e o PDF do relatório de entrega.
+
+## Demonstração em Vídeo
+
+📽️ [Clique aqui para assistir à demonstração do projeto](https://drive.google.com/file/d/1mZdYq0PmIcGKYq5ovM_R469sQ2BsSEwu/view?usp=sharing)
+
+[![Demonstração do Projeto](Captura-1.png)](https://drive.google.com/file/d/1mZdYq0PmIcGKYq5ovM_R469sQ2BsSEwu/view?usp=sharing)
+
+## Manual e Relatório
+
+📘 [Clique aqui para acessar o relatório completo da simulação](relatorio_simulacao_anomalias.pdf)
