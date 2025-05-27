@@ -97,7 +97,7 @@ O projeto utiliza o seguinte esquema de conexão entre o ESP32 e os sensores (MP
 
 ## 💾 Código do Dispositivo
 
-O código-fonte utilizado no ESP32 está no arquivo [`anomaly_get_data_v2.ino`](anomaly_get_data_v2.ino).
+O código-fonte utilizado no ESP32 está no arquivo [`anomaly_get_data_v2.ino`](esp32/anomaly_get_data_v2.ino).
 
 ## 👤 Créditos
 
