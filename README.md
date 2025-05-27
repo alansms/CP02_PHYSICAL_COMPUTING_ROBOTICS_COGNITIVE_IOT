@@ -1,8 +1,24 @@
 # Projeto de Detecção de Anomalias com Acelerômetro (ESP32 + MPU6050)
 
-Este projeto demonstra uma simulação prática de detecção de anomalias em dados de aceleração coletados de um sensor MPU6050 conectado a um ESP32. O objetivo é identificar variações anômalas de movimento que possam representar eventos relevantes como tremores, quedas ou vibrações inesperadas.
+## 📑 Sumário
+- [Demonstração em Vídeo](#🎥-demonstração-em-vídeo)
+- [Componentes Utilizados](#📦-componentes-utilizados)
+- [Funcionamento](#🧠-funcionamento)
+- [Configurações](#🔧-configurações)
+- [Execução](#🚀-execução)
+- [Observações](#📝-observações)
+- [Manual e Relatório](#📘-manual-e-relatório)
+- [🛠️ Tecnologias](#🛠️-tecnologias)
+- [👤 Créditos](#👤-créditos)
+- [📝 Licença](#📝-licença)
 
-## Componentes Utilizados
+## 🎥 Demonstração em Vídeo
+
+📽️ [Clique aqui para assistir à demonstração do projeto](https://drive.google.com/file/d/1mZdYq0PmIcGKYq5ovM_R469sQ2BsSEwu/view?usp=sharing)
+
+[![Demonstração do Projeto](Captura-1.png)](https://drive.google.com/file/d/1mZdYq0PmIcGKYq5ovM_R469sQ2BsSEwu/view?usp=sharing)
+
+## 📦 Componentes Utilizados
 
 - **ESP32** com conectividade Wi-Fi
 - **Sensor MPU6050** (acelerômetro + giroscópio)
@@ -10,16 +26,16 @@ Este projeto demonstra uma simulação prática de detecção de anomalias em da
 - **Frontend React para exibição gráfica**
 - **Adafruit BMP085** (opcional - sensor de pressão e temperatura)
 
-## Funcionamento
+## 🧠 Funcionamento
 
 1. O sensor coleta 200 amostras a 200Hz.
 2. Os dados são normalizados para valores de aceleração em g.
 3. Um POST é feito para o backend via HTTP com os dados em JSON.
 4. O backend calcula a aceleração total:  
-   \( a_{total} = \sqrt{ax^2 + ay^2 + az^2} \)
+   `a_total = sqrt(ax² + ay² + az²)`
 5. Se `a_total <= 0.98` ou `>= 1.01`, o ponto é marcado como anomalia.
 
-## Configurações
+## 🔧 Configurações
 
 - **WiFi SSID**: SMS Tecnologia
 - **Porta Backend**: 8005
@@ -28,7 +44,7 @@ Este projeto demonstra uma simulação prática de detecção de anomalias em da
 - **Linguagens**: Python (FastAPI), C++ (Arduino), JavaScript (React)
 - **Ferramentas**: CLion, Arduino IDE, Terminal, Navegador Web
 
-## Execução
+## 🚀 Execução
 
 ### Backend
 ```bash
@@ -44,7 +60,7 @@ npm start
 ### Dispositivo
 Upload do código via Arduino IDE para o ESP32.
 
-## Observações
+## 📝 Observações
 
 - O projeto foi testado com o sensor parado para medir o ruído base.
 - A visualização gráfica apresenta a linha do tempo das leituras e os alarmes são disparados no frontend se a aceleração cruzar os limiares definidos.
@@ -54,20 +70,25 @@ Upload do código via Arduino IDE para o ESP32.
 
 📄 O relatório detalhado com imagens da simulação está disponível no arquivo PDF incluso.
 
-## Repositório
-
-Este projeto está hospedado publicamente no GitHub:
-
-🔗 [https://github.com/alansms/CP02_PHYSICAL_COMPUTING_ROBOTICS_COGNITIVE_IOT](https://github.com/alansms/CP02_PHYSICAL_COMPUTING_ROBOTICS_COGNITIVE_IOT)
-
 Inclui código-fonte completo, datasets utilizados, modelo treinado e o PDF do relatório de entrega.
 
-## Demonstração em Vídeo
-
-📽️ [Clique aqui para assistir à demonstração do projeto](https://drive.google.com/file/d/1mZdYq0PmIcGKYq5ovM_R469sQ2BsSEwu/view?usp=sharing)
-
-[![Demonstração do Projeto](Captura-1.png)](https://drive.google.com/file/d/1mZdYq0PmIcGKYq5ovM_R469sQ2BsSEwu/view?usp=sharing)
-
-## Manual e Relatório
+## 📘 Manual e Relatório
 
 📘 [Clique aqui para acessar o relatório completo da simulação](relatorio_simulacao_anomalias.pdf)
+
+## 🛠️ Tecnologias
+
+| Componente        | Tecnologia         |
+|-------------------|--------------------|
+| Backend           | FastAPI (Python)   |
+| Frontend          | React (JavaScript) |
+| Microcontrolador  | ESP32 (C++ / Arduino) |
+| Sensor            | MPU6050 + BMP085   |
+
+## 👤 Créditos
+
+Projeto desenvolvido por Alan para a disciplina *PHYSICAL COMPUTING, ROBOTICS & COGNITIVE IOT* - FIAP 2025.
+
+## 📝 Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
