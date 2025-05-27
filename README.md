@@ -1,16 +1,18 @@
 # Projeto de Detecção de Anomalias com Acelerômetro (ESP32 + MPU6050)
 
 ## 📑 Sumário
-- [Demonstração em Vídeo](#🎥-demonstração-em-vídeo)
-- [Componentes Utilizados](#📦-componentes-utilizados)
-- [Funcionamento](#🧠-funcionamento)
-- [Configurações](#🔧-configurações)
-- [Execução](#🚀-execução)
-- [Observações](#📝-observações)
-- [Manual e Relatório](#📘-manual-e-relatório)
-- [🛠️ Tecnologias](#🛠️-tecnologias)
-- [👤 Créditos](#👤-créditos)
-- [📝 Licença](#📝-licença)
+- [Demonstração em Vídeo](#demonstração-em-vídeo)
+- [Componentes Utilizados](#componentes-utilizados)
+- [Funcionamento](#funcionamento)
+- [Configurações](#configurações)
+- [Execução](#execução)
+- [Observações](#observações)
+- [Manual e Relatório](#manual-e-relatório)
+- [Tecnologias](#tecnologias)
+- [Esquema de Ligações](#esquema-de-ligações)
+- [Código do Dispositivo](#código-do-dispositivo)
+- [Créditos](#créditos)
+- [Licença](#licença)
 
 ## 🎥 Demonstração em Vídeo
 
@@ -85,9 +87,24 @@ Inclui código-fonte completo, datasets utilizados, modelo treinado e o PDF do r
 | Microcontrolador  | ESP32 (C++ / Arduino) |
 | Sensor            | MPU6050 + BMP085   |
 
+## 🔌 Esquema de Ligações
+
+O projeto utiliza o seguinte esquema de conexão entre o ESP32 e os sensores (MPU6050 + BMP085). Você pode visualizar o circuito completo no link abaixo:
+
+🔗 [Visualizar Esquema no Wokwi](https://wokwi.com/projects/430900063892950017)
+
+![Esquema de Ligações - Captura de Tela](Captura-2.png)
+
+## 💾 Código do Dispositivo
+
+O código-fonte utilizado no ESP32 está disponível na pasta `esp32_code/`. Ele realiza a coleta dos dados dos sensores, calcula a aceleração em g, e envia os dados ao backend via HTTP/JSON. O LED embutido no ESP32 pisca para indicar envio e status da conexão Wi-Fi.
+
 ## 👤 Créditos
 
-Projeto desenvolvido por Alan para a disciplina *PHYSICAL COMPUTING, ROBOTICS & COGNITIVE IOT* - FIAP 2025.
+Projeto desenvolvido por Alan Maximiano para a disciplina *PHYSICAL COMPUTING, ROBOTICS & COGNITIVE IOT* - FIAP 2025.
+RM:557088 Turma 2TIAPY-2025
+Professor Graduação: Ícaro Gonçales
+
 
 ## 📝 Licença
 
