@@ -1,18 +1,18 @@
 # Projeto de Detecção de Anomalias com Acelerômetro (ESP32 + MPU6050)
 
 ## 📑 Sumário
-- [Demonstração em Vídeo](#demonstração-em-vídeo)
-- [Componentes Utilizados](#componentes-utilizados)
-- [Funcionamento](#funcionamento)
-- [Configurações](#configurações)
-- [Execução](#execução)
-- [Observações](#observações)
-- [Manual e Relatório](#manual-e-relatório)
-- [Tecnologias](#tecnologias)
-- [Esquema de Ligações](#esquema-de-ligações)
-- [Código do Dispositivo](#código-do-dispositivo)
-- [Créditos](#créditos)
-- [Licença](#licença)
+- [🎥 Demonstração em Vídeo](#🎥-demonstração-em-vídeo)
+- [📦 Componentes Utilizados](#📦-componentes-utilizados)
+- [🧠 Funcionamento](#🧠-funcionamento)
+- [🔧 Configurações](#🔧-configurações)
+- [🚀 Execução](#🚀-execução)
+- [📝 Observações](#📝-observações)
+- [📘 Manual e Relatório](#📘-manual-e-relatório)
+- [🛠️ Tecnologias](#🛠️-tecnologias)
+- [🔌 Esquema de Ligações](#🔌-esquema-de-ligações)
+- [💾 Código do Dispositivo](#💾-código-do-dispositivo)
+- [👤 Créditos](#👤-créditos)
+- [📝 Licença](#📝-licença)
 
 ## 🎥 Demonstração em Vídeo
 
@@ -97,7 +97,7 @@ O projeto utiliza o seguinte esquema de conexão entre o ESP32 e os sensores (MP
 
 ## 💾 Código do Dispositivo
 
-O código-fonte utilizado no ESP32 está disponível na pasta `esp32_code/`. Ele realiza a coleta dos dados dos sensores, calcula a aceleração em g, e envia os dados ao backend via HTTP/JSON. O LED embutido no ESP32 pisca para indicar envio e status da conexão Wi-Fi.
+O código-fonte utilizado no ESP32 está no arquivo [`anomaly_get_data_v2.ino`](anomaly_get_data_v2.ino).
 
 ## 👤 Créditos
 
