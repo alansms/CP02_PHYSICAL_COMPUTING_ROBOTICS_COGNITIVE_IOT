@@ -6,9 +6,9 @@
 #include <Wire.h>
 
 const int LED_PIN = 2;
-const char* WIFI_SSID = "your_network_here";
-const char* WIFI_PASS = "yous_password_here";
-const char* SERVER_URL = "http://server_ip_here:4242";
+const char* WIFI_SSID = "IOT-SMS";
+const char* WIFI_PASS = "@#Pi231179";
+const char* SERVER_URL = "173.21.101.62:4242";
 
 const int SAMPLE_RATE = 200;
 const int NUM_SAMPLES = 200;  // 1 second of data at 200Hz
